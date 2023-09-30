@@ -1,0 +1,84 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+    color: aliceblue;
+    height: 100vh;
+}
+
+ul li {
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+/* 
+style 
+*/
+header {
+    background-color: #172554;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents {
+    background-color: #444654;
+    display: flex;
+    height: 95%;
+}
+aside, article {
+    padding: 3% 5%;
+}
+aside {
+    width: 15%;
+    background-color: #202123;
+}
+article {
+    width: 85%;
+}
+.contents-header, .contents-footer {
+    height: 5%;
+}
+aside ul, .contents-main{
+    height: 90%;
+}
+
+.article-header {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+.message {
+    width: 80%;
+}
+.send {
+    width: 10%;
+}
+input, button {
+    height: 30px;
+    box-sizing: border-box;
+}
+.contents-main {
+    overflow-y: scroll;
+    padding: 20px 20px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #444654;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #202123;
+}
+
+.contents-main div {
+    margin: 20px;
+}
